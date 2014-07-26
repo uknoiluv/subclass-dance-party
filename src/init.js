@@ -8,9 +8,14 @@ $(document).ready(function(){
 
     var dancerMakerFunction = window[dancerMakerFunctionName];
 
-    var rand = Math.random();
+// <<<<<<< HEAD
+//     var rand = Math.random();
+//     var dancer = new dancerMakerFunction(
+//       $("body").height() * (Math.random() * 0.2 + 0.5),
+// =======
     var dancer = new dancerMakerFunction(
-      $("body").height() * (Math.random() * 0.2 + 0.5),
+      $("body").height() * Math.random(),
+// >>>>>>> 7/26changesAfterCurriculumSaved
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
